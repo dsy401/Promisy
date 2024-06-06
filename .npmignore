@@ -23,7 +23,7 @@ docs-build/
 
 .prettierignore
 .prettierrc
-babel.config
-jest.config
+babel.config.js
+jest.config.js
 yarn.lock
 .github

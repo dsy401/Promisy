@@ -13,7 +13,8 @@
     "rootDir": "./src",
     "outDir": "dist",
     "sourceMap": true,
-    "declaration": true
+    "declaration": true,
+    "declarationMap": true,
   },
   "exclude": [
     "**/*.test.ts",
