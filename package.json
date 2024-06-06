@@ -1,6 +1,6 @@
 {
   "name": "@dsy401/promisy",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "A promise utils for javascript/typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
