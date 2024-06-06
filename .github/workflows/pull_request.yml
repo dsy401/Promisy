@@ -5,11 +5,7 @@ on:
 
 jobs:
   build:
-    permissions:
-      checks: write
-      pull-requests: write
-      contents: write
-    name: Build & Test
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,5 +18,17 @@ jobs:
         run: yarn prettier:check
       - name: Build
         run: yarn build
-      - name: Test with Coverage
-        uses: ArtiomTr/jest-coverage-report-action@v2
+
+  test:
+    name: Test & Coverage
+    runs-on: ubuntu-latest
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: ArtiomTr/jest-coverage-report-action@v2
