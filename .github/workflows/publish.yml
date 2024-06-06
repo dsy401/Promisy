@@ -28,6 +28,12 @@ jobs:
         run: yarn build
       - name: Test
         run: yarn test
+      - name: Archive build
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: .
+
 
   publish-npm:
     name: Publish
