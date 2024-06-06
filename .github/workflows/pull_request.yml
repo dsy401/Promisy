@@ -1,12 +1,14 @@
 name: Pull Request
 
 on:
-  pull_request_target:
-    branches:
-      - master
+  pull_request:
 
 jobs:
   build:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: write
     name: Build & Test
     runs-on: ubuntu-latest
     steps:
