@@ -14,25 +14,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Cache Dependencies
-        id: dependencies_cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            node_modules
-            */*/node_modules
-          key: ${{ runner.os }}-${{ hashFiles('**/yarn.lock') }}
       - name: Install Depdencies
         run: yarn
       - name: Build
         run: yarn build
       - name: Test
         run: yarn test
-      - name: Archive build
-        uses: actions/upload-artifact@v3
-        with:
-          name: build
-          path: .
 
 
   publish-npm:
@@ -46,10 +33,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - uses: actions/download-artifact@v3
-        with:
-          name: build
-          path: ./
-      - run: yarn publish
+      - run: |
+          yarn
+          yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
