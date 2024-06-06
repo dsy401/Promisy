@@ -15,7 +15,8 @@
   },
   "scripts": {
     "prettier": "prettier src --write",
-    "test": "jest"
+    "test": "jest",
+    "build": "tsc"
   },
   "keywords": [
     "typescript",
