@@ -10,8 +10,6 @@ const config = {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
     '^.+\\.(js|jsx)$': 'babel-jest',
   },
-  collectCoverage: true,
-  coverageDirectory: "coverage",
   coverageProvider: "v8",
   coverageThreshold: {
     global: {
