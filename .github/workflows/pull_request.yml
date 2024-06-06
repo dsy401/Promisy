@@ -15,7 +15,7 @@ jobs:
       - name: Install Dependencies
         run: yarn
       - name: Prettier Check
-        run: prettier:check
+        run: yarn prettier:check
       - name: Build
         run: yarn build
       - name: Test
