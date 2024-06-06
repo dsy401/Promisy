@@ -13,6 +13,12 @@ const config = {
   collectCoverage: true,
   coverageDirectory: "coverage",
   coverageProvider: "v8",
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+    },
+  }
 };
 
 module.exports = config;
