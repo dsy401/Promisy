@@ -15,7 +15,8 @@
   },
   "scripts": {
     "prettier": "prettier src --write",
-    "test": "jest",
+    "prettier:check": "prettier src -c",
+    "test": "jest --verbose",
     "build": "tsc -p tsconfig.json"
   },
   "keywords": [
