@@ -108,8 +108,5 @@
   },
   "exclude": [
     "**/*.test.ts"
-  ],
-  "files": [
-    "src/*"
   ]
 }
