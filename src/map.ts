@@ -1,5 +1,4 @@
 import { all } from './all';
-import { immediate } from './immediate';
 
 export function map<T, S>(items: T[], cb: (item: T, i: number) => S | Promise<S>): Promise<S[]>;
 
