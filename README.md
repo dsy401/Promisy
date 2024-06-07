@@ -21,11 +21,11 @@ Javascript
 var Promisy = require('@dsy401/promisy')
 ```
 Alternatively in ES6
-```
+```js
 import * as Promisy from "@dsy401/promisy";
 ```
 If that ES6 import doesn't work
-```
+```js
 import Promisy from "@dsy401/promisy";
 ```
 
