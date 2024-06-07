@@ -55,10 +55,6 @@ export function waterfall<A, B, C, D, E, F, Rest extends unknown[] | []>(
 
 export function waterfall(...fns: any[]): Function {
   return async (...args: any[]): Promise<any> => {
-    if (fns.length === 0) {
-      return;
-    }
-
     let r = await fns[0](...args);
 
     for (let i = 1; i < fns.length; i++) {
