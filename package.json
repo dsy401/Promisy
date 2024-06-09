@@ -1,0 +1,37 @@
+{
+  "name": "@dsy401/promisy",
+  "version": "0.0.11",
+  "description": "A promise utils for javascript/typescript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "name": "Oliver Deng",
+    "email": "oliverdeng1020@gmail.com",
+    "url": "https://www.linkedin.com/in/oliver-deng-347166191"
+  },
+  "repository": {
+    "url": "https://github.com/dsy401/Promisy"
+  },
+  "scripts": {
+    "prettier": "prettier src --write",
+    "prettier:check": "prettier src -c",
+    "test": "jest --verbose",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [
+    "typescript",
+    "npm",
+    "promise",
+    "utils"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "prettier": "3.3.1",
+    "ts-jest": "^29.1.4",
+    "typescript": "^5.4.5"
+  }
+}

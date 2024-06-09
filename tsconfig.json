@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noEmitOnError": true,
+    "pretty": true,
+    "noUnusedLocals": true,
+    "strict": true,
+    "target": "es2017",
+    "rootDir": "./src",
+    "outDir": "dist",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+  },
+  "exclude": [
+    "**/*.test.ts",
+    "node_modules"
+  ]
+}
